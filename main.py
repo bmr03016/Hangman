@@ -19,7 +19,7 @@ for _ in range(word_length) :
   display += "_"
 
 while not end_of_game: 
-  guess = input("글자를 맞춰보세요: ").lower() 
+  guess = input("단어를 맞춰보세요!: ").lower() 
   replit.clear()
 
 if guess in display: 
@@ -33,7 +33,7 @@ for position in range(word_length) :
 
 # 고른 알파벳이 없는 경우 -> 목숨 하나 없어짐
 if guess not in chosen_word: 
-  print(f"당신이 고른 {guess}는 단어에 없습니다.\n You lose a life") 
+  print(f"당신이 고른 {guess}는 단어에 없습니다.\n 목숨 -1") 
   lives -= 1 
   if lives == 0: 
     end_of_game = True print("You Lose:'(")
